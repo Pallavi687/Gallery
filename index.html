@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style>
+    #gallery{
+        display: flex;
+        height: 500px;
+    }
+
+    #upperleft{
+        height: 480px;
+        width: 460px;
+        background-color: #777777;
+        margin-right:10px;
+    }
+
+    #upperright{
+        height: 500px;
+        width: 500px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    #upperright > div{
+        height: 230px;
+        width: 230px;
+        margin-left: 10px;
+        background-color: #777777;
+
+    }
+
+
+
+    #bottom {
+        display: flex;
+        
+        }
+
+        #bottom :nth-child(1){
+            height: 100px;
+            width: 460px;
+            background-color: #777777;
+            margin-right: 10px;
+
+        }
+        #bottom :nth-child(2){
+            height: 100px;
+            width: 480px;
+            background-color: #777777;
+            margin-left: 10px;
+
+        }
+        #logo {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+</style>
+<body>
+    
+    <div id="logo">
+        Gallery
+    </div>
+
+    <div id="gallery">
+        <div id="upperleft">
+            
+        </div>
+        <div id="upperright">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <div id="bottom">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
